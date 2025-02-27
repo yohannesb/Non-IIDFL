@@ -12,9 +12,9 @@ from federated_learning.utils import save_data_loader_to_file
 if __name__ == '__main__':
     args = Arguments(logger)
 
-    # ---------------------------------
-    # ------------ CIFAR10 ------------
-    # ---------------------------------
+    # # ---------------------------------
+    # # ------------ CIFAR10 ------------
+    # # ---------------------------------
     dataset = CIFAR10Dataset(args)
     TRAIN_DATA_LOADER_FILE_PATH = "data_loaders/cifar10/train_data_loader.pickle"
     TEST_DATA_LOADER_FILE_PATH = "data_loaders/cifar10/test_data_loader.pickle"

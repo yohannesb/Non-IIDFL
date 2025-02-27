@@ -10,9 +10,9 @@ if __name__ == '__main__':
     if not os.path.exists(args.get_default_model_folder_path()):
         os.mkdir(args.get_default_model_folder_path())
 
-    # ---------------------------------
-    # ----------- Cifar10CNN ----------
-    # ---------------------------------
+    # # ---------------------------------
+    # # ----------- Cifar10CNN ----------
+    # # ---------------------------------
     full_save_path = os.path.join(args.get_default_model_folder_path(), "Cifar10CNN.model")
     torch.save(Cifar10CNN().state_dict(), full_save_path)
 

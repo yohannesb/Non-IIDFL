@@ -17,10 +17,10 @@ class Arguments:
         self.logger = logger
 
         self.batch_size = 10
-        self.test_batch_size = 1000
+        self.test_batch_size = 10000
         self.epochs = 200
-        #self.lr = 0.01
-        self.lr = 1e-4  #for Adam
+        self.lr = 0.0001
+        #self.lr = 1e-4  #for Adam
         self.momentum = 0.5
         self.cuda = True
         self.shuffle = False
@@ -45,14 +45,14 @@ class Arguments:
         self.epoch_save_start_suffix = "start"
         self.epoch_save_end_suffix = "end"
 
-        self.num_workers = 50
-        self.num_poisoned_workers = 10
+        self.num_workers = 1
+        self.num_poisoned_workers = 1
 
         # self.num_workers = 1
         # self.num_poisoned_workers = 0
 
         self.net = Cifar10CNN
-        #self.net = FashionMNISTCNN
+        # self.net = FashionMNISTCNN
 
         # self.train_data_loader_pickle_path = "data_loaders/fashion-mnist/train_data_loader.pickle"
         # self.test_data_loader_pickle_path = "data_loaders/fashion-mnist/test_data_loader.pickle"

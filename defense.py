@@ -17,9 +17,11 @@ from mpl_toolkits.mplot3d import Axes3D
 #MODELS_PATH = "/absolute/path/to/models/folder/1823_models"
 #EXP_INFO_PATH = "/absolute/path/to/log/file/1823.log"
 
-MODELS_PATH =  "C:/Users/yohan/DataPoisoning_FL/3000_models"
-EXP_INFO_PATH = "C:/Users/yohan/DataPoisoning_FL/logs"
+# MODELS_PATH =  "C:/Users/yohan/DataPoisoning_FL/3000_models"
+# EXP_INFO_PATH = "C:/Users/yohan/DataPoisoning_FL/logs"
 
+MODELS_PATH = "D:/All_experimental_results/Federated_ML_Experiments/With_Piosoning_attack/Experiment-4 Results/Adam_with_LR0.0001_P5-3_10%/3000_models(E1)/3000_models"
+EXP_INFO_PATH = "D:/All_experimental_results/Federated_ML_Experiments/With_Piosoning_attack/Experiment-4 Results/Adam_with_LR0.0001_P5-3_10%/logs"
 
 
 # The epochs over which you are calculating gradients.
@@ -37,7 +39,7 @@ CLASS_NUM = 5
 
 # The IDs for the poisoned workers. This needs to be manually filled out.
 # You can find this information at the beginning of an experiment's log file.
-POISONED_WORKER_IDS = [19, 25, 6, 30, 20, 26, 17, 37, 45, 0]
+POISONED_WORKER_IDS = [24, 16, 11, 12, 21, 4, 38, 13, 7, 27]
 
 # The resulting graph is saved to a file
 SAVE_NAME = "defense_results.jpg"
