@@ -26,8 +26,7 @@ class FashionMNISTDataset(Dataset):
         transform = transforms.Compose([
             transforms.RandomHorizontalFlip(),
             transforms.ToTensor(),
-            normalize
-        ])
+            ])
         train_dataset = datasets.FashionMNIST(root=self.get_args().get_data_path(), train=True, download=True, transform=transform)
 
         # Apply Label Flipping
