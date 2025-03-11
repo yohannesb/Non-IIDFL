@@ -22,7 +22,7 @@ class FashionMNISTDataset(Dataset):
     def load_train_dataset(self):
         self.get_args().get_logger().debug("Loading Fashion MNIST train data")
 
-        normalize = transforms.Normalize(mean=[0.5], std=[0.5])  # Mean and std for Fashion MNIST
+        # normalize = transforms.Normalize(mean=[0.5], std=[0.5])  # Mean and std for Fashion MNIST
         transform = transforms.Compose([
             transforms.RandomHorizontalFlip(),
             transforms.ToTensor(),
