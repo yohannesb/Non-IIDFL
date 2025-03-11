@@ -47,7 +47,6 @@ class FashionMNISTDataset(Dataset):
         # normalize = transforms.Normalize(mean=[0.5], std=[0.5])  # Mean and std for Fashion MNIST
         transform = transforms.Compose([
             transforms.ToTensor(),
-            normalize
         ])
         test_dataset = datasets.FashionMNIST(root=self.get_args().get_data_path(), train=False, download=True, transform=transform)
 
