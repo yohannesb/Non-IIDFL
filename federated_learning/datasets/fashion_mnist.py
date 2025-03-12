@@ -41,7 +41,7 @@ class FashionMNISTDataset(Dataset):
         train_dataset = datasets.FashionMNIST(root=self.get_args().get_data_path(), train=True, download=True, transform=transform)
 
         # Apply Label Flipping
-        # self.flip_labels(train_dataset)
+         self.flip_labels(train_dataset)
 
         # Apply Non-IID Distribution using Dirichlet
         train_dataset = self.create_noniid_partitions(train_dataset, num_clients=10, alpha=0.5)
