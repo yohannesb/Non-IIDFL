@@ -214,8 +214,6 @@ class Arguments:
                "Epochs: {}\n".format(self.epochs) + \
                "Learning Rate: {}\n".format(self.lr) + \
                "Momentum: {}\n".format(self.momentum) + \
-               "Beta1: {}\n".format(self.beta1) + \
-               "Beta2: {}\n".format(self.beta2) + \
                "EPS: {}\n".format(self.eps) + \
                "CUDA Enabled: {}\n".format(self.cuda) + \
                "Shuffle Enabled: {}\n".format(self.shuffle) + \
@@ -238,3 +236,7 @@ class Arguments:
                "Loss Function: {}\n".format(self.loss_function) + \
                "Default Model Folder Path: {}\n".format(self.default_model_folder_path) + \
                "Data Path: {}\n".format(self.data_path)
+
+
+               # "Beta1: {}\n".format(self.beta1) + \
+               # "Beta2: {}\n".format(self.beta2) + \
