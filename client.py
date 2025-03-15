@@ -438,23 +438,23 @@ class Client:
 
         self.loss_function = self.args.get_loss_function()()
 
-        # Use Adam optimizer
-        self.optimizer = optim.Adam(
-            self.net.parameters(),
-            lr=self.args.get_learning_rate(),
-            betas=(self.args.get_beta1(), self.args.get_beta2()),
-            eps=self.args.get_eps()
-        )
-
-        # # Use RMSprop optimizer
-        # self.optimizer = optim.RMSprop(
+        # # Use Adam optimizer
+        # self.optimizer = optim.Adam(
         #     self.net.parameters(),
         #     lr=self.args.get_learning_rate(),
-        #     alpha=0.99,
-        #     eps=self.args.get_eps(),
-        #     weight_decay=0,
-        #     momentum=self.args.get_momentum()
+        #     betas=(self.args.get_beta1(), self.args.get_beta2()),
+        #     eps=self.args.get_eps()
         # )
+
+        # # Use RMSprop optimizer
+        self.optimizer = optim.RMSprop(
+            self.net.parameters(),
+            lr=self.args.get_learning_rate(),
+            alpha=0.99,
+            eps=self.args.get_eps(),
+            weight_decay=0,
+            momentum=self.args.get_momentum()
+        )
 
         # # Use SGD optimizer
         # self.optimizer = optim.SGD(
