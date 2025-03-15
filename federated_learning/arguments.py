@@ -32,8 +32,8 @@ class Arguments:
         self.min_lr = 1e-10
 
         #Adam
-        self.beta1 = 0.9
-        self.beta2 = 0.999
+        # self.beta1 = 0.9
+        # self.beta2 = 0.999
         self.eps = 1e-8
 
         self.round_worker_selection_strategy = None
