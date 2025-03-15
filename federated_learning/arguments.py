@@ -107,11 +107,11 @@ class Arguments:
     
 
     ##########################
-    def get_beta1(self):
-        return self.beta1
+    # def get_beta1(self):
+    #     return self.beta1
     
-    def get_beta2(self):
-        return self.beta2
+    # def get_beta2(self):
+    #     return self.beta2
     
     def get_eps(self):
         return self.eps
