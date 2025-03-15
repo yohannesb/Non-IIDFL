@@ -215,7 +215,6 @@ class Arguments:
                "Learning Rate: {}\n".format(self.lr) + \
                "Momentum: {}\n".format(self.momentum) + \
                "EPS: {}\n".format(self.eps) + \
-               "EPS: {}\n".format(self.eps) + \
                "CUDA Enabled: {}\n".format(self.cuda) + \
                "Shuffle Enabled: {}\n".format(self.shuffle) + \
                "Log Interval: {}\n".format(self.log_interval) + \
