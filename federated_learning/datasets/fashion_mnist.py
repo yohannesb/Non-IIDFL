@@ -334,7 +334,7 @@ class FashionMNISTDataset(Dataset):
         self.flip_labels(train_dataset)
 
         # Apply Non-IID Distribution using Dirichlet
-        train_dataset = self.create_noniid_partitions(train_dataset, num_clients=10, alpha=0.5)
+        train_dataset = self.create_noniid_partitions(train_dataset, num_clients=50, alpha=0.5)
 
         train_loader = DataLoader(train_dataset, batch_size=len(train_dataset))
         train_data = self.get_tuple_from_data_loader(train_loader)
