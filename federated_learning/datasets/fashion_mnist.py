@@ -376,7 +376,7 @@ class FashionMNISTDataset(Dataset):
 
         logger.warning(f"⚠️ Flipped {num_to_flip} samples from Class {source_class} → Class {target_class}")
 
-    def create_noniid_partitions(self, dataset, num_clients=50, alpha=0.5):
+    def create_noniid_partitions(self, dataset, num_clients=10, alpha=0.5):
         targets = np.array(dataset.targets)
         num_classes = 10
 
