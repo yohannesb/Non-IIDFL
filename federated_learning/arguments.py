@@ -214,8 +214,6 @@ class Arguments:
                "Epochs: {}\n".format(self.epochs) + \
                "Learning Rate: {}\n".format(self.lr) + \
                "Momentum: {}\n".format(self.momentum) + \
-               "Beta1: {}\n".format(self.beta1) + \
-               "Beta2: {}\n".format(self.beta2) + \
                "EPS: {}\n".format(self.eps) + \
                "CUDA Enabled: {}\n".format(self.cuda) + \
                "Shuffle Enabled: {}\n".format(self.shuffle) + \
