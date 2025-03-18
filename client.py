@@ -446,22 +446,22 @@ class Client:
         #     eps=self.args.get_eps()
         # )
 
-        # # Use RMSprop optimizer
-        # self.optimizer = optim.RMSprop(
-        #     self.net.parameters(),
-        #     lr=self.args.get_learning_rate(),
-        #     alpha=0.99,
-        #     eps=self.args.get_eps(),
-        #     weight_decay=0,
-        #     momentum=self.args.get_momentum()
-        # )
-
-        # Use SGD optimizer
-        self.optimizer = optim.SGD(
+        # Use RMSprop optimizer
+        self.optimizer = optim.RMSprop(
             self.net.parameters(),
             lr=self.args.get_learning_rate(),
+            alpha=0.99,
+            eps=self.args.get_eps(),
+            weight_decay=0,
             momentum=self.args.get_momentum()
         )
+
+        # # Use SGD optimizer
+        # self.optimizer = optim.SGD(
+        #     self.net.parameters(),
+        #     lr=self.args.get_learning_rate(),
+        #     momentum=self.args.get_momentum()
+        # )
 
         # Scheduler remains the same
         self.scheduler = MinCapableStepLR(
